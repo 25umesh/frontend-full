@@ -1,0 +1,24 @@
+{
+  "name": "fixforge-project",
+  "version": "1.0.0",
+  "description": "FixForge - A debugging tool with Firebase authentication and VS Code integration",
+  "main": "main.js",
+  "scripts": {
+    "start": "live-server public",
+    "dev": "nodemon server.js",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase": "^10.7.1",
+    "lucide-react": "^0.479.0",
+    "nodemon": "^3.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

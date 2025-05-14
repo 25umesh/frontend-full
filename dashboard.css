@@ -1,0 +1,63 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:hover {
+  background: white;
+  color: #151A2D;
+}
+
+.sidebar {
+  transition: width 0.3s ease;
+}
+
+.sidebar.w-20 .sidebar-text {
+  display: none;
+}
+
+.profile-dropdown {
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  width: 200px;
+}
+
+.profile-dropdown input {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* ✅ FIX: Prevent sidebar logo & toggler overlapping on collapse */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar.w-20 .sidebar-header {
+  flex-direction: column;
+  justify-content: center; /* override justify-between */
+  align-items: center;
+  gap: 0.5rem;
+}
+

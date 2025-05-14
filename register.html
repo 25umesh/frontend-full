@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | FixForge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS for custom styling -->
+</head>
+<body class="flex justify-center items-center h-screen bg-gray-100">
+    <div class="w-[700px] flex bg-white shadow-lg rounded-lg overflow-hidden">
+        
+        <!-- Left Panel (Registration Form) -->
+        <div class="w-1/2 p-8">
+            <h2 class="text-2xl font-bold mb-6 text-center">Register</h2>
+            
+            <label class="block text-gray-700">Full Name</label>
+            <input type="text" id="fullname" placeholder="Enter your full name" class="w-full border px-3 py-2 rounded-md mb-4">
+
+            <label class="block text-gray-700">Email</label>
+            <input type="email" id="registerEmail" placeholder="Enter your email" class="w-full border px-3 py-2 rounded-md mb-4">
+            
+            <label class="block text-gray-700">Password</label>
+            <input type="password" id="registerPassword" placeholder="Create a password" class="w-full border px-3 py-2 rounded-md mb-2">
+            
+            <label class="block text-gray-700">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm your password" class="w-full border px-3 py-2 rounded-md mb-4">
+
+            <!-- Register Button -->
+            <button id="registerBtn" class="w-full bg-black text-white py-2 rounded-md font-semibold hover:bg-gray-800 transition">
+                Register
+            </button>
+
+            <!-- Social Registration Buttons (One Line, Small Size) -->
+            <p class="text-center text-sm text-gray-600 mt-4 flex justify-center space-x-3">
+                <button id="googleRegister" class="text-blue-500 text-sm font-semibold hover:underline">
+                    Register with Google
+                </button>
+                <span>|</span>
+                <button id="githubRegister" class="text-gray-800 text-sm font-semibold hover:underline">
+                    Register with GitHub
+                </button>
+            </p>
+
+            <p class="text-center text-sm text-gray-600 mt-4">
+                Already have an account? <a href="index.html" class="text-blue-500">Login Here</a>
+            </p>
+        </div>
+
+        <!-- Right Panel (Welcome Section) -->
+        <div class="w-1/2 flex flex-col justify-center items-center text-center p-6 bg-black text-white rounded-r-lg">
+            <h2 class="text-xl font-bold">Welcome To FixForge</h2>  
+            <p class="text-sm opacity-80 mt-2">Experience seamless debugging , error detection & fixer</p>
+        </div>
+
+    </div>
+
+    <script type="module" src="auth.js"></script>
+</body>
+</html>

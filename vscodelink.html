@@ -1,0 +1,10 @@
+function openVSCode() {
+    const projectPath = "C:/Users/pagad/OneDrive/Desktop/project"; // Update with your correct project path
+    window.location.href = `vscode://file/${projectPath}`;
+}
+
+function openFileInVSCode(fileName) {
+    const projectPath = "C:/Users/pagad/OneDrive/Desktop/project"; // Update with your correct project path
+    const filePath = `${projectPath}/${fileName}`;
+    window.location.href = `vscode://file/${filePath}`;
+}
